@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all 0.3s linear;
+  font-family: "poppins", sans-serif;
+  transition: all 0.1s linear;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  padding: 0 15%;
+  height: 64px;
+  border-bottom: #b9b6b6 1px solid;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.header__logo img {
+  height: 40px;
+  transform: translateY(9%);
+}
+.header__logo img:hover {
+  cursor: pointer;
+}
+.header__search {
+  position: relative;
+}
+.header__search input {
+  border-radius: 5px;
+  padding: 12px 40px;
+  background-color: #ccc;
+  user-select: none;
+}
+.header__search i {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+  left: 10px;
+}
+.header__icon {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.header__icon .header__icon--more {
+  display: flex;
+}
+.header__icon .header__icon--more i {
+  font-size: 25px;
+  margin: 12px;
+}
+.header__icon .header__icon--more i:hover {
+  cursor: pointer;
+  color: #ada6a6;
+}
+.header__icon .header__icon--more img {
+  height: 30px;
+  border-radius: 50%;
+  border: #b9b6b6 1px solid;
+  transform: translateY(30%);
+}
+.header__icon .header__icon--more img:hover {
+  cursor: pointer;
+  color: #ada6a6;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 0 15%;
+  height: 1000px;
+  background-color: #f7f3f3;
+}
+.content__sidebar {
+  margin-top: 24px;
+  right: 15%;
+  position: fixed;
+}
+.content__sidebar .content__sidebar__users {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content__sidebar .content__sidebar__users img {
+  width: 50px;
+  border: #b9b6b6 1px solid;
+  border-radius: 50%;
+}
+.content__sidebar .content__sidebar__users .content__sidebar__name__users {
+  font-size: 12px;
+  margin-left: 12px;
+}
+.content__sidebar .content__sidebar__users .content__sidebar__name__users h4 + h4 {
+  color: #cecccc;
+}
+.content__sidebar .content__sidebar__users a {
+  margin-left: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.content__sidebar .content__sidebar__orther {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.content__sidebar .content__sidebar__orther h3 {
+  display: inline-block;
+  font-size: 14px;
+  color: #cecccc;
+}
+.content__sidebar .content__sidebar__orther a {
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.content__sidebar .content__sidebar__list__friend {
+  margin-top: 12px;
+}
+.content__sidebar .content__sidebar__list__friend .nav__list__friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 12px;
+}
+.content__sidebar .content__sidebar__list__friend .nav__list__friend img {
+  width: 40px;
+  display: inline-block;
+  border: #b9b6b6 1px solid;
+  border-radius: 50%;
+}
+.content__sidebar .content__sidebar__list__friend .nav__list__friend .content__sidebar__name__users {
+  display: inline-block;
+}
+.content__sidebar .content__sidebar__list__friend .nav__list__friend .content__sidebar__name__users h4 {
+  font-size: 12px;
+}
+.content__sidebar .content__sidebar__list__friend .nav__list__friend .content__sidebar__name__users h4 + h4 {
+  color: #cecccc;
+  font-size: 14px;
+  font-weight: 100;
+}
+.content__sidebar .content__sidebar__list__friend .nav__list__friend a {
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 100px;
+}
+.content__sidebar .content__address {
+  width: 300px;
+  margin: 12px 0 0 5px;
+  font-size: 12px;
+  color: #cecccc;
+  display: inline-block;
+}
+.content__post {
+  margin-top: 24px;
+  z-index: inherit;
+}
+.content__post .content__post__story {
+  border: #b9b6b6 1px solid;
+  max-width: 90%;
+  height: 90px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.content__post .content__post__story i {
+  display: flex;
+  right: 0;
+}
+.content__post .content__post__main {
+  margin-top: 40px;
+  border: #b9b6b6 1px solid;
+  width: 90%;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

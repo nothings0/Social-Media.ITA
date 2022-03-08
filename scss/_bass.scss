@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all 0.3s linear;
+  font-family: "poppins", sans-serif;
+  transition: all 0.1s linear;
+}
+body {
+}
+@mixin hover {
+  &:hover {
+    cursor: pointer;
+    color: $bg_hover_color;
+  }
+}
+@mixin line-item {
+  display: inline-block;
+}
